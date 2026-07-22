@@ -1,9 +1,14 @@
+import World from "./World"
 
 
 function App() {
 
   return (
-    <h1>Hii! This is my first react project.</h1>
+    <>
+      <h1>Hii! This is my first react project.</h1>
+      <h2>Hii! This is my first react project.</h2>
+      <World/>
+    </>
   )
 }
 
@@ -34,3 +39,6 @@ export default App
 // react as a framework: React is often referred to as a framework, but it is technically a library. The main difference between a library and a framework is that a library provides a set of functions and tools that developers can use to build their applications, while a framework provides a more structured approach to building applications by enforcing certain patterns and conventions. React is often used in conjunction with other libraries and frameworks to build full-featured web applications, which is why it is sometimes referred to as a framework.
 
 // what is react-dom: ReactDOM is a package that provides DOM-specific methods that can be used at the top level of a web app to enable an efficient way of managing DOM elements of the web page. It is used to render React components into the DOM and manage their lifecycle.
+
+
+// React is a single-page application (SPA) framework, which means that it allows developers to build web applications that load a single HTML page and dynamically update the content as the user interacts with the app. This approach provides a smoother and faster user experience compared to traditional multi-page applications, where each user action requires a full page reload. React achieves this by using a virtual DOM to efficiently update only the parts of the page that need to change, rather than reloading the entire page.
