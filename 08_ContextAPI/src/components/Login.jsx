@@ -1,5 +1,7 @@
 import React, {useState, useContext} from 'react'
 import UserContext from '../context/UserContext'
+import { useNavigate } from 'react-router-dom'
+import Profile from './Profile.jsx'
 
 function Login() {
     const [username, setUsername] = useState('')
@@ -7,9 +9,12 @@ function Login() {
 
     const { user, setUser } = useContext(UserContext)
 
+    const navigate = useNavigate()
+
     const handleLogin = (e) => {
         e.preventDefault()
         setUser({username, password})
+        navigate('/profile')
     }
 
   return (
